@@ -6,71 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Checkout MeetingPackage</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header class="header">
+
         <div class="container">
+
+            <!-- Logo -->
             <div class="logo">
                 <a href="https://meetingpackage.com">
                     <img src="images/logo.png" alt="MeetingPackage Logo">
                 </a>
             </div>
 
-            <div class="login">
-                <span class="greetings">Hi,</span>
-                <span class="user-name">Mark</span>
-            </div>
+            <!-- Settings -->
+            <div class="settings">
 
-            <div class="language">
-                <select>
-                    <option value="suomi">Suomi</option>
-                    <option value="ruotsi">Ruotsi</option>
-                    <option value="english">English</option>
-                </select>
+                <!-- Log In -->
+                <div class="login">
+                    <span class="greetings">Hi,</span>
+                    <span class="user-name">Larry</span>
+                </div>
+
+                <!-- Language -->
+                <div class="language">
+                    <select>
+                        <option value="suomi">Suomi</option>
+                        <option value="ruotsi">Ruotsi</option>
+                        <option value="english">English</option>
+                    </select>
+                </div>
             </div>
         </div>
     </header>
 
+    <!-- Main -->
     <main class="main">
-        <div class="container">
-            <form class="user-info-form" action="">
-                <h2 class="title">Personal information:</h2>
 
-                <label>First name:
-                    <input type="text" value="Mark">
-                </label>
-                <label>Last name:
-                    <input type="text" value="Iloinen">
-                </label>
-                <label>E-mail:
-                    <input type="email" value="mark.iloinen@gmail.com">
-                </label>
-                <label>Phone:
-                    <input type="tel" value="0413339933">
-                </label>
-                <label>Company:
-                    <input type="text" value="Google">
-                </label>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Additional information"></textarea>
-                <label>agree to terms
-                    <input type="checkbox">
-                </label>
+        <!-- User Info Section -->
+        <section class="user-info-section">
 
-                <button class="btn continue-btn">Continue</button>
-            </form>
+            <div class="container">
 
-            <section class="booking-req-sum">
-                <h2 class="title">Booking Request Summary:</h2>
-                <ul class="booking-req-sum-list">
+                <h2 class="main-title">Personal information:</h2>
+
+                <!-- User Info Form -->
+                <form class="user-info-form" action="">
+                    <label>
+                        <div class="label-text">
+                            First name:
+                        </div>
+                        <input class="input-text" type="text" value="Larry">
+                    </label>
+                    <label>
+                        <div class="label-text">
+                            Last name:
+                        </div>
+                        <input class="input-text" type="text" value="Page">
+                    </label>
+                    <label>
+                        <div class="label-text">
+                            E-mail:
+                        </div>
+                        <input class="input-text" type="email" value="larry.page@gmail.com">
+                    </label>
+                    <label>
+                        <div class="label-text">
+                            Phone:
+                        </div>
+                        <input class="input-text" type="tel" value="0413339933">
+                    </label>
+                    <label>
+                        <div class="label-text">
+                            Company:
+                        </div>
+                        <input class="input-text" type="text" value="Google">
+                    </label>
+                    <label>
+                        <div class="label-text">
+                            Additional information:
+                        </div>
+                        <textarea class="textarea" name="" id="" cols="30" rows="10"
+                            placeholder="You can type here.."></textarea>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span class="label-text">
+                            Agree to terms
+                        </span>
+                    </label>
+                    <div class="button-box">
+                        <button class="btn btn-blue">Continue</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section class="booking-section">
+
+            <div class="container">
+
+                <h2 class="main-title">Booking Request Summary:</h2>
+
+                <!-- Booking Request List -->
+                <ul class="booking-req-list">
                     <li>
                         <span class="title">Title:</span>
                         <span class="value">“Venue Luna House”</span>
                     </li>
                     <li>
                         <span class="title">Picture:</span>
-                        <span class="value">see attachment.</span>
+                        <span class="value">see attachment</span>
                     </li>
                     <li>
                         <span class="title">Date:</span>
@@ -86,26 +136,33 @@
                     </li>
                     <li>
                         <span class="title">Price per delegate:</span>
-                        <span class="value">55 EUR.</span>
+                        <span class="value">55 EUR</span>
                     </li>
                     <li>
                         <span class="title">Total price:</span>
-                        <span class="value">550 EUR.</span>
+                        <span class="value">550 EUR</span>
                     </li>
                 </ul>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
+
         <div class="container">
+
+            <!-- Foo Logo -->
             <div class="logo">
                 <a href="https://meetingpackage.com">
                     <img src="images/logo.png" alt="MeetingPackage Logo">
                 </a>
             </div>
 
+            <!-- Foo Navigation -->
             <nav class="navigation">
+
+                <!-- Nav Column -->
                 <div class="nav-col">
                     <h3 class="title">Solutions</h3>
                     <ul class="nav-list">
@@ -123,6 +180,8 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- Nav Column -->
                 <div class="nav-col">
                     <h3 class="title">Products</h3>
                     <ul class="nav-list">
@@ -143,6 +202,8 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- Nav Column -->
                 <div class="nav-col">
                     <h3 class="title">More</h3>
                     <ul class="nav-list">

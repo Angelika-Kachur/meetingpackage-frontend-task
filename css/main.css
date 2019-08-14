@@ -1,55 +1,265 @@
-body {}
+* {
+    box-sizing: border-box;
+}
 
-.container {}
+img {
+    max-width: 100%;
+}
 
-.header {}
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 320px;
+}
 
-.logo {}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-.logo a {}
+.header {
+    padding: 25px 0 20px;
+    border-bottom: solid 1px #0055a9;
+}
 
-.logo img {}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
 
-.login {}
+.logo {
+    margin: 0 10px 0 0;
+}
 
-.login .greetings {}
+.logo a {
+    display: block;
+}
 
-.login .user-name {}
+.login {
+    margin: 0 0 5px;
+}
+
+.login .user-name {
+    font-weight: 600;
+}
 
 .language {}
 
+.main-title {
+    color: #616161;
+    text-align: center;
+    margin: 0 0 40px;
+    font-weight: 500;
+    font-size: 26px;
+}
+
 .main {}
 
-.user-info-form {}
+.user-info-section {
+    padding: 50px 0;
+}
+
+.user-info-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
 
 .user-info-form .title {}
 
-.user-info-form label {}
+.user-info-form label {
+    display: block;
+    margin: 0 0 20px;
+}
 
-.user-info-form {}
+.user-info-form .label-text {
+    margin: 0 0 10px;
+}
 
-.btn {}
+.user-info-form .input-text {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    width: 100%;
+    padding: 5px 0 15px;
+    border: solid 1px transparent;
+    border-bottom-color: #ccc;
+    transition: all ease .4s;
+}
 
-.continue-btn {}
 
-.booking-req-sum {}
+.user-info-form .input-text:focus {
+    outline: none;
+    border-bottom-color: #0055a9;
+}
 
-.booking-req-sum .title {}
+.user-info-form .textarea {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    width: 100%;
+    height: 145px;
+    padding: 5px;
+    border: solid 1px #ccc;
+    transition: all ease .4s;
+    resize: none;
+}
 
-.booking-req-sum-list {}
+.user-info-form .textarea:focus {
+    outline: none;
+    border-color: #0055a9;
+}
 
-.booking-req-sum-list .title {}
+.button-box {
+    text-align: center;
+}
 
-.booking-req-sum-list .value {}
+.btn {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 13px;
+    border-radius: 50px;
+    min-width: 200px;
+    transition: all ease .4s;
+    border: solid 1px transparent;
+}
 
-.footer {}
+.btn:focus {
+    outline: none;
+}
 
-.footer .logo {}
+.btn-blue {
+    color: #fff;
+    border-color: #0055a9;
+    background-image: linear-gradient(to right, #0055a9 0%, #30cfd0 50%, #0055a9 100%);
+    background-size: 200% auto;
+}
 
-.footer .navigation {}
+.btn-blue:hover {
+    background-position: right center;
+}
 
-.footer .nav-col {}
+.booking-section {
+    padding: 50px 0;
+    background: #ececec;
+}
 
-.footer .navigation .title {}
+.booking-section .title {
+    text-align: center;
+}
+
+.booking-req-list {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.booking-req-list li {
+    margin: 0 0 10px;
+}
+
+.booking-req-list .title {
+    font-weight: 700;
+    margin: 0 5px 0 0;
+}
+
+.booking-req-list .value {
+    font-style: italic;
+}
+
+.footer {
+    padding: 25px 0 20px;
+    border-top: solid 1px #0055a9;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .logo {
+    align-self: center;
+    padding: 0 20px;
+    width: 30%;
+}
+
+.footer .navigation {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.footer .navigation a {
+    color: #616161;
+    text-decoration: none;
+}
+
+.footer .nav-col {
+    padding: 0 20px;
+}
+
+.footer .nav-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex: 0 1 50%;
+}
+
+.footer .nav-list li {
+    margin: 0 0 8px;
+}
+
+.footer .navigation .title {
+    margin: 0 0 20px;
+}
 
 .footer .navigation .nav-list {}
+
+@media screen and (max-width: 992px) {
+    .header .logo {
+        max-width: 200px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .footer .container {
+        display: block;
+    }
+
+    .footer .logo {
+        text-align: center;
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    .footer .logo img {
+        max-width: 200px;
+    }
+
+    .footer .navigation {
+        width: 100%;
+    }
+
+    .footer .nav-col {
+        flex: 1 1 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer .navigation {
+        display: block;
+    }
+
+    .footer .navigation .title {
+        margin: 0 0 10px;
+    }
+
+    .footer .nav-col {
+        margin: 0 0 20px;
+    }
+}
