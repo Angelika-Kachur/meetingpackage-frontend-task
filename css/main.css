@@ -216,23 +216,23 @@ body {
     text-align: center;
 }
 
-.booking-req-list {
+#booking-req-list {
     max-width: 500px;
     margin: 0 auto;
     padding: 0;
     list-style: none;
 }
 
-.booking-req-list li {
+#booking-req-list li {
     margin: 0 0 10px;
 }
 
-.booking-req-list .title {
+#booking-req-list .title {
     font-weight: 700;
     margin: 0 5px 0 0;
 }
 
-.booking-req-list .value {
+#booking-req-list .value {
     font-style: italic;
 }
 
