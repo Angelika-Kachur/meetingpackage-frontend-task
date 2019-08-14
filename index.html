@@ -46,9 +46,7 @@
 
         <!-- User Info Section -->
         <section class="user-info-section">
-
             <div class="container">
-
                 <h2 class="main-title">Personal information:</h2>
 
                 <!-- User Info Form -->
@@ -91,12 +89,12 @@
                             placeholder="You can type here.."></textarea>
                     </label>
                     <label class="checkbox-container">Agree to terms
-                        <input type="checkbox">
+                        <input type="checkbox" id="checkbox-agree">
                         <span class="checkmark"></span>
                     </label>
 
-                    <div class="button-box">
-                        <button class="btn btn-blue">Continue</button>
+                    <div class="button-box-center">
+                        <button class="btn btn-blue" id="user-info-form-btn" disabled>Continue</button>
                     </div>
                 </form>
             </div>
@@ -104,9 +102,7 @@
 
         <!-- Booking Section -->
         <section class="booking-section">
-
             <div class="container">
-
                 <h2 class="main-title">Booking Request Summary:</h2>
 
                 <!-- Booking Request List - Filled with fillBookingReqList function  -->
@@ -117,7 +113,6 @@
 
     <!-- Footer -->
     <footer class="footer">
-
         <div class="container">
 
             <!-- Foo Logo -->
@@ -187,7 +182,6 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="js/booking-request-summary.json"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 

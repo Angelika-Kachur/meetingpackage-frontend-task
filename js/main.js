@@ -1,3 +1,4 @@
+//JSON Data for Booking Request List
 let bookingRequestSummary = {
     "Title": "“Venue Luna House”",
     "Picture": "see attachment",
@@ -8,6 +9,7 @@ let bookingRequestSummary = {
     "Total Price": "550 EUR"
 }
 
+//Fill Booking Request List
 function fillBookingReqList() {
     let bookingReqListElem = document.getElementById("booking-req-list");
 
@@ -30,5 +32,14 @@ function fillBookingReqList() {
         }
     }
 };
-
 fillBookingReqList();
+
+//Check if User agrees
+function checkAgreeCheckbox() {
+    let checkboxElem = document.getElementById('checkbox-agree');
+    let continueBtn = document.getElementById('user-info-form-btn');
+    checkboxElem.onchange = function () {
+        continueBtn.disabled = !this.checked;
+    };
+};
+checkAgreeCheckbox();
